@@ -5,7 +5,8 @@
 1. Explique o que é um Elemento, um Atributo, uma Tag de abertura e uma Tag de fechamento e o conteúdo do elemento na linguagem HTML. Mostre através de um exemplo.<br />
 **Elemento:** é tudo, desde a `tag` de início para `tag` final.<br />
 **Atributo:** fornecem informações adicionais sobre um elemento. São sempre especificados na tag de início.<br />
-**Tag:** tags de abertura e fechamento são elementos do html do próprio html
+**Tag:** tags de abertura e fechamento são elementos do html do próprio html<br />
+**Conteúdo do elemento html:** são tudo que está inserido no elemento html como mostra no exemplo 1 abixo:
 
 ~~~html
 <!-- Exemplo 1 -->
