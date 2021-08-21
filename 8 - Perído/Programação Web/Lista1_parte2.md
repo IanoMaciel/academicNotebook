@@ -63,7 +63,7 @@ a) Elementos estruturais.
 </html>
 ~~~
 b) p, H1, a, br, comentários, title, style, meta, img, table, tr, td<br />
-O `exemplo 5` abaixo mostra a estruta de uma página web simples com as tags requisita no enuciado b). A imagem 1 mostra o resultado do script exemplo 5
+O `exemplo 5` abaixo mostra a estruta de uma página web simples com as tags requisita no enuciado b). A `imagem 1` mostra o resultado do script `exemplo 5`
 
 ~~~html
 <!-- Exemplo 5 -->
