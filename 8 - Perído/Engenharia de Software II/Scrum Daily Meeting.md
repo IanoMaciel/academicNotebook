@@ -22,4 +22,4 @@ Além da dívida técnica da sprint III precisamos adicionar mais duas issue par
 
 3. Quais foram as dificuldades encontradas?
 
-Ambos tiveram dificuldades com o GitHub, pois houve problemas em trabalhar remotamente. 
+Problema com o GitHub local, o que dificultou no andamento das atualizações remotas do projeto.
