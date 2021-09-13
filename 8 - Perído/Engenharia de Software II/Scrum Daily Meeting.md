@@ -14,7 +14,7 @@ Além da dívida técnica temos outras 6 issues que são basicamente a parte da 
 - Desenvolvimento dos diagramas UML; (docs)
 - Preparação do ambiente para o back-end (dívida téc.)
 
-Como estamos trabalhando em paralelo com uma designe, a mesma criou algumas funcionalidades que não seria necessária para a aplicação. E para evitar trabalho desnecessário, decidimos apenas focar nas issues de documentação (docs) sendo assim ficando 4 dívidas técnicas para a próxima sprint (sprint IV). 
+Como estamos trabalhando em paralelo com uma designer, a mesma criou algumas funcionalidades que não seriam necessários para a aplicação. E para evitar trabalho desnecessário, decidimos apenas focar nas issues de documentação (docs) sendo assim ficando 4 dívidas técnicas para a próxima sprint (sprint IV). 
 
 2. O que vocês irão fazer a partir de hoje até a próxima sprint? 
    
