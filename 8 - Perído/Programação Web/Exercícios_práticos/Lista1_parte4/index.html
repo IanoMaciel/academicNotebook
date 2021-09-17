@@ -1,0 +1,29 @@
+<!DOCTYPE htm>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Exercício 1 - parte 4</title>
+
+        <!-- link css -->
+        <link href="styleSheet.css" rel="styleSheet">
+
+        <script src="./validation.js"></script>
+
+    </head>
+    <body>
+        <h1>Faça seu login</h1>
+        <form class="form_container">
+            <div class="form_input">
+                <input type="text" name="cpf" id="cpf" placeholder="CPF" maxlength="11" class="class_input_form">
+            </div>
+            
+            <div class="form_input">
+                <input type="password" name="senha" id="senha" placeholder="SENHA" class="class_input_form">
+            </div>
+
+            <div class="send_form" onclick="validation()">
+                <input type="submit" value="ENTRAR" class="send">
+            </div>
+        </form>
+    </body>
+</html>
