@@ -2,11 +2,14 @@
 
 ## Parte III
 
-1. Explique as três maneiras de inserir uma folha de estilo? Explique cada uma delas.
+**1. Explique as três maneiras de inserir uma folha de estilo? Explique cada uma delas.**
+
 + Folha de estilo externa;
 + Folha de estilo interna;
 + Estilho em linha
-2. Explique o que é ordem de cascata no CSS. <br />
+
+**2. Explique o que é ordem de cascata no CSS.**
+
 De um modo geral, podemos dizer que todos os
 estilos vão "cascata" em uma nova folha de
 estilo "virtual" pelas seguintes regras, em que o último ponto tem a mais alta prioridade:
@@ -14,7 +17,8 @@ estilo "virtual" pelas seguintes regras, em que o último ponto tem a mais alta 
    + Folha de estilo externa
    + Folha de estilo interna (na seção principal)
    + Estilo em linha (dentro de um elemento HTML)
-1. Exercício prático: crie uma página Web que insira folhas de estilo de três forma diferentes.
+   + 
+**3. Exercício prático: crie uma página Web que insira folhas de estilo de três forma diferentes.**
 
 ### Folha de estilo externa
 Para este exercício prático foi criado um diretório `Exercício_práticos>Lista1_parte3` para este fim. 
@@ -75,7 +79,8 @@ h1 {
     </body>
 </html>
 ~~~
-4. Exercício prático: crie uma página Web que contenha: um com pelo menos 3 elementos HTML5 e outro com pelo menos três elementos HTML(para navegadores que não lêem HTML5)
+
+**4. Exercício prático: crie uma página Web que contenha: um com pelo menos 3 elementos HTML5 e outro com pelo menos três elementos HTML(para navegadores que não lêem HTML5)**
 
 ~~~html
 <!-- Lista1_parte3/exemplo4.html -->
