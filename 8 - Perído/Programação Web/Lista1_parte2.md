@@ -2,7 +2,8 @@
 
 ## Parte II
 
-1. Explique o que é um Elemento, um Atributo, uma Tag de abertura e uma Tag de fechamento e o conteúdo do elemento na linguagem HTML. Mostre através de um exemplo.<br />
+**1. Explique o que é um Elemento, um Atributo, uma Tag de abertura e uma Tag de fechamento e o conteúdo do elemento na linguagem HTML. Mostre através de um exemplo.**
+
 **Elemento:** é tudo, desde a `tag` de início para `tag` final.<br />
 **Atributo:** fornecem informações adicionais sobre um elemento. São sempre especificados na tag de início.<br />
 **Tag:** tags de abertura e fechamento são elementos do html do próprio html<br />
@@ -20,7 +21,8 @@
 </html>
 ~~~
 
-2. Quais as Tags estruturais de um documento HTML? Mostre através de um exemplo o posicionamento de cada um.
+**2. Quais as Tags estruturais de um documento HTML? Mostre através de um exemplo o posicionamento de cada um.**
+
 ~~~html
 <!-- Exemplo 2 -->
 <!DOCTYPE HTML>
@@ -35,7 +37,8 @@
 ~~~
 
 
-3. O que é um documento HTML aninhado? Mostre com um exemplo. 
+**3. O que é um documento HTML aninhado? Mostre com um exemplo.**
+
 ~~~html
 <!-- Exemplo 3 -->
 <!DOCTYPE HTML>
@@ -47,9 +50,10 @@
     </body>
 </html>
 ~~~
-4. Exercício prático: Construa uma página Web com os seguintes elementos HTML: <br />
+
+**4. Exercício prático: Construa uma página Web com os seguintes elementos HTML:**
    
-a) Elementos estruturais.
+**a) Elementos estruturais.**
 ~~~html
 <!-- Exemplo 4 -->
 <!DOCTYPE HTML>
@@ -62,7 +66,9 @@ a) Elementos estruturais.
     </body> <!-- tag de fechamento do corpo -->
 </html>
 ~~~
-b) p, H1, a, br, comentários, title, style, meta, img, table, tr, td<br />
+
+**b) p, H1, a, br, comentários, title, style, meta, img, table, tr, td**
+
 O `exemplo 5` abaixo mostra a estruta de uma página web simples com as tags requisita no enuciado b). A `imagem 1` mostra o resultado do script `exemplo 5`
 
 ~~~html
