@@ -6,18 +6,20 @@ de dados monousuário, para ser armazenado pelo browser, no disco
 rígido da máquina cliente, que usa JavaScript e SQLite. Siga os passos
 abaixo.**
 
-    a) Defina o nome do aplicativo web que deve aparecer no topo da
-    página.
+a) Defina o nome do aplicativo web que deve aparecer no topo da
+página.
 
-    b) Crie um módulo de cadastro
+>Sistema de orçamento pessoal
 
-    c) Crie um módulo de consulta individual através de um campo
+b) Crie um módulo de cadastro
 
-    d) Crie um módulo de consulta para todos os registros
+c) Crie um módulo de consulta individual através de um campo
 
-    e) Crie um módulo de exclusão através de um campo
+d) Crie um módulo de consulta para todos os registros
 
-    f) Conteúdo HTML e formatação CSS são importante
+e) Crie um módulo de exclusão através de um campo
+
+f) Conteúdo HTML e formatação CSS são importante
 
 **Observação:** este exercício é individual e não devem ser compartilhado com outros  colegas sob pena de anulação de seu valor
 em pontos.
