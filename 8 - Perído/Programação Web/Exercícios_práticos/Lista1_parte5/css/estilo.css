@@ -1,0 +1,18 @@
+.backgroundColor {
+    background: #000;
+}
+
+.formInput {
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.formInputText {
+    padding: 6.5px;
+    margin: 10px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #c6c6c6;
+}
