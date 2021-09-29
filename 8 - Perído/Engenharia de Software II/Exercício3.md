@@ -24,8 +24,7 @@ No contexto do armazenamento de dados em um sistema de computador, isso signific
 
 **4. Distribuição**
 
-Este problema de design está relacionado com a forma de dis-
-tributar o software em todo o hardware (incluindo
+Este problema de design está relacionado com a forma de distributar o software em todo o hardware (incluindo
 hardware de computador e hardware de rede),
 como os componentes se comunicam e como
 middleware pode ser usado para lidar com heteroge -
