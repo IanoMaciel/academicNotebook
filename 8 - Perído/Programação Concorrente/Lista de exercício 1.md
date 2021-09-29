@@ -1,8 +1,9 @@
 # Lista exercício - Pthreads
-
 **Discente:** Iano de Benedito Maciel; <br>
 **Matrícula:** 21752128<br>
 **Data de entrega:** 20/10/2021
+## Importante
+Implemente 5 (cinco) questões da lista "Lista Pthreads.doc", sendo 2 (dois) pontos para cada questão. As respostas deverão ser entregues exclusivamente em formato texto ASCII (nada de .pdf, .doc, .docx ou .odt) e deverão ser enviadas através da sala de aula virtual da disciplina na seção "Avaliações". Devem ser organizadas em arquivos separados, um por questão, com o nome no formato "Q[número da questão].[c]", sem aspas. Questões com o nome diferente deste formato não serão aceitas.
 
 **1. Faça um programa que imprima os números primos existentes entre 0 e 99999. UTILIZE
 THREADS. Dica: para cada faixa de mil valores crie uma thread e dispare o processo para
