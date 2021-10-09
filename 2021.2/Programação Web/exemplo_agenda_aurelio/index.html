@@ -14,10 +14,13 @@
 		input, button {width: 25em; font-size: 100%; padding: .25em}
 	</style>
 	
+	<!-- JQuery -->
 	<script type="text/javascript" src="jquery.js"></script>
+	
+	<!-- JavaScript -->
 	<script type="text/javascript">
 		// Erro genérico de callback para transações de banco de dados
-		var errCallback = function(){
+		var errCallback = function() {
 			alert("Há um erro de banco de dados!");
 		}
 	
@@ -32,19 +35,23 @@
 		});
 	
 		// Essa é a função salvar
-		var salvarcontato = function(nome, telefone, endereço, successCallback){
-			db.transaction(function(transaction){
+		var salvarcontato = function(nome, telefone, endereço, successCallback)
+		{
+			db.transaction(function(transaction)
+			{
 				transaction.executeSql(("INSERT INTO contatos (nome, telefone, endereço) VALUES (?, ?, ?);"), 
-				[nome, telefone, endereço], function(transaction, results){successCallback(results);}, errCallback);
+				[nome, telefone, endereço], function(transaction, results) {successCallback(results);}, errCallback);
 			});
 		};
 		
 		// Esta é uma função de carga, que carrega todos os contatos para um determinado local
-		var carregacontato = function(nome, successCallback){
-			db.transaction(function(transaction){
+		var carregacontato = function(nome, successCallback)
+		{
+			db.transaction( function(transaction) {
+
 				transaction.executeSql(("SELECT * FROM contatos WHERE nome=?"), [nome],
 					function(transaction, results){successCallback(results);}, errCallback);
-				});
+			});
 		};
 	
 		// evento documento okay
