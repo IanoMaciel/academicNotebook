@@ -140,7 +140,10 @@ fn main(){
 
 **Com base na Figura acima explique o processo de implementação Hardware/Software**
 
-A implementação Hardware/software, básicamente, é uma técnica ou combinação que permite o projeto como um todo, e não como partes separadas de Hardware e Software. Com isso foi criado o conceito de co-design,ou seja, a sua enssencia é um forma de mesclar  hardware e software em uma tentativa de otimizar e satisfazer as restrições de design, como custo , desempenho e potência do produto final.
+A imagem acima mostra uma implementação de hardware/software (co-design) onde este proceso é normalmente caracterizado por três etapas: representação do sistema, particionamento HW/SW e prototipagem. 
+- A primeira etapa no projeto é a especificação da sua funcionalidade. A descrição do comportamento, ou funcionalidade, do sistema pode ser melhor entendida através da utilização de `modelos`. Um modelo representa um conjunto de objetos e interação entre eles. 
+- A segunda etapa é a implementação da funcionalidade do sistema descrito através do modelo escolhido utlizando um conjunto de componentes físicos. O processo de projeto de um sistema hardware/software pode ser definido como um cojunto de tarefas que transformam um modelo em uma arquitetura. 
+- Por fim, ocorre a etapa da prototipagem, que consiste em se efetuar a síntese do hardware e a síntese da comunicação entre os dois domínios.
 
 
 **5.Codifique o circuito desenvolvido na questão 1 em linguagem de programação C.**
