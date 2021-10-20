@@ -27,3 +27,6 @@ para confirmar o correto funcionamento com exceção do
 armazenamento em tabela que só será feita a análise do código. Portanto deve ser enviado somente o código das páginas em uma pasta.
 - pode ser reaproveitado código envida junto com o
 exercício.
+
+# Resolução do exercício
+[Clique aqui](https://github.com/IanoMaciel/academicNotebook/tree/main/2021.2/Programa%C3%A7%C3%A3o%20Web/Exerc%C3%ADcios_pr%C3%A1ticos/Lista1_parte7) para abrir o diretório do exercício resolvido:)
