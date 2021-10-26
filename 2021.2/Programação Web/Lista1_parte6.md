@@ -19,3 +19,5 @@ compartilhado com outros colegas sob pena de anulação de seu valor
 em pontos.
 - O código deve ser testado no servidor para confirmar o
 correto funcionamento.
+
+# Resposta: [Clique aqui](https://github.com/IanoMaciel/academicNotebook/tree/main/2021.2/Programa%C3%A7%C3%A3o%20Web/Exerc%C3%ADcios_pr%C3%A1ticos/Lista1_parte6)
