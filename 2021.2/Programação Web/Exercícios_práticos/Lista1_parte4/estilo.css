@@ -1,0 +1,68 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    font-family: "Lucida Console", "Courier New", monospace;
+    background-image: linear-gradient(to bottom, orange 0, orange 50%, white 50%);
+}
+
+h1 {
+    color: #000;
+    font-size: 25px;
+    margin: 0;
+}
+
+a {
+    margin-top:10px;
+    width: 320px;
+    height: 30px;
+    background:orange;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.form-container {
+    background: #fff;
+    box-shadow: 0 0 0.4em black;
+    padding: 20px;
+    /* centraliza */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.form-area {
+    margin: 10px;
+}
+
+.form-input {
+    width: 310px;
+    height: 30px;
+    border: 1px solid #dadada;
+    text-align: center;
+    font-size: 18px;   
+    font-family: "Lucida Console", "Courier New", monospace; 
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: orange;
+    box-shadow: 0 0 10px orange;
+}
+
+.btn-entrar {
+    margin-top: 10px;
+    width: 320px;
+    height: 30px;
+    background: orange;
+    border: none;
+    font-size: 18px;
+    color: #fff;
+    font-family: "Lucida Console", "Courier New", monospace; 
+}
