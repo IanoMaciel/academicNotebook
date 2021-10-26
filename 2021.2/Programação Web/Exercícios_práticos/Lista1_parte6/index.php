@@ -29,7 +29,13 @@
     $textof = str_replace('#', ' ', $fTexto);
 
     // f)
-    $calendor = date('d/m/Y \à\s H:i:s');
+    $hora = date('H');
+
+    if($hora < '10')
+        $hora_atual = 'Tenha uuma boa manhã';
+    if($hora < 20)
+        $hora_atual = 'Tenha um bom dia';
+    else $hora_atual = 'tenha uma boa noite';
     
 
 ?>
@@ -104,7 +110,7 @@
     inferior a 10:00, e "Tenha um bom dia!" Se a hora atual for menor
     que 20:00. Caso contrário, a saída será “Tenha uma boa noite!".</h1>
         
-            resultado: <?= $calendor ?>
+            resultado: <?= $hora_atual ?>
         </div>
 
         <div class="questoes"> 
