@@ -11,3 +11,5 @@
         - Em caso de CPF e SENHA corretos mostrar uma mensagem de ALERT de sucesso validando a tela de LOGIN
 
     c) Observações: este exercício eé individual e não devem ser compartilhado com outros colegas sob pena de anulação de seu valor em pontos 
+
+# Reposta: [Clique aqui](https://github.com/IanoMaciel/academicNotebook/tree/main/2021.2/Programa%C3%A7%C3%A3o%20Web/Exerc%C3%ADcios_pr%C3%A1ticos/Lista1_parte4)
