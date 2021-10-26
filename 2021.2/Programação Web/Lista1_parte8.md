@@ -7,7 +7,7 @@
 **1. Deve ser criado um código PHP, que seja capaz de permitir ao usuário
 escrever dados em uma caixa de entrada para salvar em um arquivo txt
 no servidor.**
-
+# resposta : [clique aqui](https://github.com/IanoMaciel/academicNotebook/tree/main/2021.2/Programa%C3%A7%C3%A3o%20Web/Exerc%C3%ADcios_pr%C3%A1ticos/Lista1_parte8)
 **2. Fazer o upload de um arquivo para o servidor.**
 
 **Observações:**
