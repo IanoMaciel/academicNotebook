@@ -1,118 +1,282 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-	<head>
-        <meta charset="utf-8" />
-		<title>Orçamento pessoal</title>
-
-		<!-- Bootstrap início -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-        <!-- Font Awesome -->
-        <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-
-        <!-- css -->
-        <link href="./css/estilo.css" rel="styleSheet">
-
-        <!-- js -->
-        <script src="js/app.js"></script>
-
-	</head>
-
-    <body>
-
-        <nav class="navbar navbar-expand-lg navbar-dark mb-5 backgroundColor">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    <img src="./img/logo.png" width="50" height="35" alt="Orçamento pessoal">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Cadastro</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="consulta.html">Consulta</a>
-                    </li>
-                </ul>
-                
-                </div>
-            </div>
-        </nav>
-
-        <div class="container">
-            <div class="row">
-                <div class="col mb-5">
-                    <h1 class="display-4">Registro de nova despesa</h1>
-                </div>
-            </div>
-
-            <div class="row mb-2">
-                <div class="col-md-2">
-                    <select class="formInput" id="ano">
-                        <option value="">Ano</option>
-                        <option value="2020">2020</option>
-                        <option value="2021">2021</option>
-                    </select>
-                </div>
-
-                <div class="col-md-2">
-                    <select class="formInput" id="mes">
-                        <option value="">Mês</option>
-                        <option value="1">Janeiro</option>
-                        <option value="2">Fevereiro</option>
-                        <option value="3">Março</option>
-                        <option value="4">Abril</option>
-                        <option value="5">Maio</option>
-                        <option value="6">Junho</option>
-                        <option value="7">Julho</option>
-                        <option value="8">Agosto</option>
-                        <option value="9">Setembro</option>
-                        <option value="10">Outubro</option>
-                        <option value="11">Novembro</option>
-                        <option value="12">Dezembro</option>
-                    </select>
-                </div>
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <title>Open DataBase</title>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>  
+     
+    <script>  
+  
+        var Database_Name = 'MyDatabase';  
+        var Version = 1.0;  
+        var Text_Description = 'My First Web-SQL Example';  
+        var Database_Size = 2 * 1024 * 1024;  
+        var dbObj = openDatabase(Database_Name, Version, Text_Description, Database_Size);  
+        dbObj.transaction(function (tx) {  
+  
+            tx.executeSql('CREATE TABLE IF NOT EXISTS Employee_Table (id unique, Name, Location,did)');  
+            tx.executeSql('CREATE TABLE IF NOT EXISTS dept_Table (did unique, dName,estd)');  
+  
+  
+            var today = new Date();  
+            var dd = today.getDate();  
+            var mm = today.getMonth() + 1; //January is 0!  
+  
+            var yyyy = today.getFullYear();  
+            if (dd < 10) {  
+                dd = '0' + dd  
+            }  
+            if (mm < 10) {  
+                mm = '0' + mm  
+            }  
+            var today = dd + '/' + mm + '/' + yyyy;  
+  
+            tx.executeSql('insert into dept_Table(did, dName, estd) values(1,"IT","' + today + '")');  
+            tx.executeSql('insert into dept_Table(did, dName, estd) values(2,"Accountant","' + today + '")');  
+            tx.executeSql('insert into dept_Table(did, dName, estd) values(3,"Claerk","' + today + '")');  
+            tx.executeSql('insert into dept_Table(did, dName, estd) values(4,"Management","' + today + '")');  
+            alldetails();  
+        });  
+  
+  
+        function Insert() {  
             
-                <div class="col-md-2">
-                    <input type="text" class="formInputText" placeholder="Dia" id="dia" />
-                </div>
-
-                <div class="col-md-6">
-                    <select class="formInput" id="tipo">
-                        <option value="">Tipo</option>
-                        <option value="1">Alimentação</option>
-                        <option value="2">Educação</option>
-                        <option value="3">Lazer</option>
-                        <option value="4">Saúde</option>
-                        <option value="5">Transporte</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-8">
-                    <input type="text" class="formInputText" placeholder="Descrição" id="descricao" />
-                </div>
-
-                <div class="col-md-2">
-                    <input type="text" class="formInputText" placeholder="Valor" id="valor" />
-                </div>
-
-                <div class="col-md-2 d-flex justify-content-end">
-                    <button type="button" class="btn btn-dak" onclick="cadastrarDespesa()">
-                        <i class="fas fa-plus"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </body>	
-
-</html>
+            var id = document.getElementById("tbID").value;  
+            var name = document.getElementById("tbName").value;  
+            var location = document.getElementById("tbLocation").value;  
+            var did = document.getElementById("tbLdept").value;  
+            dbObj.transaction(function (tx) {  
+                tx.executeSql('insert into Employee_Table(id, Name, Location,did) values(' + id + ',"' + name + '","' + location + '",' + did + ')');  
+  
+  
+            });  
+  
+            alldetails();  
+        }  
+  
+        function del() {  
+            var id = document.getElementById("ddlid").value;  
+          //  alert(id);  
+            dbObj.transaction(function (tx) {  
+                tx.executeSql('delete from Employee_Table where id=' + id + '');  
+            });  
+  
+            empidbind();  
+  
+            alldetails();  
+        }  
+  
+  
+        function myFunction()  
+        {  
+            var id = document.getElementById("ddlid").value;  
+  
+            dbObj.transaction(function (tx) {  
+                tx.executeSql('SELECT * from Employee_Table where id=' + id + '', [], function (tx, results)  
+                {  
+                    document.getElementById("tbName").value = results.rows.item(0).Name;  
+                    document.getElementById("tbLocation").value = results.rows.item(0).Location;  
+                    document.getElementById("tbLdept").value = results.rows.item(0).did;  
+  
+                      
+                }, null);  
+            });  
+             
+        }  
+  
+        function showdel() {  
+  
+            empidbind();  
+  
+            $('#tdorginal').hide();  
+            $('#tdid').show();  
+            $('#btnupdate').hide();  
+            $('#btnInsert').hide();  
+            $('#btndel').show();  
+            $('#btninsertshw').show();  
+            $('#btnupdateshw').show();  
+            $('#btndeleteshw').hide();  
+            ////////////  
+            $('#rowName').hide();  
+            $('#rowLocation').hide();  
+            $('#rowdept').hide();  
+        }  
+  
+        function showin()  
+        {  
+            $('#tdid').hide();  
+            $('#tdorginal').show();  
+            
+            $('#btnupdate').hide();  
+            $('#btnInsert').show();  
+            $('#btndel').hide();  
+            $('#btninsertshw').hide();  
+            $('#btnupdateshw').show();  
+            $('#btndeleteshw').show();  
+            ////////////  
+            $('#rowName').show();  
+            $('#rowLocation').show();  
+            $('#rowdept').show();  
+  
+            /////////////  
+          document.getElementById("tbID").value='';  
+          document.getElementById("tbName").value='';  
+          document.getElementById("tbLocation").value='';  
+          document.getElementById("tbLdept").value='1';  
+  
+               empidbind();  
+        }  
+  
+  
+        function empidbind()  
+        {  
+            dbObj.transaction(function (tx) {  
+                tx.executeSql('SELECT * from Employee_Table', [], function (tx, results) {  
+                    var len = results.rows.length, i;  
+                    document.getElementById("ddlid").innerHTML = '';  
+                    var str = '';  
+                    for (i = 0; i < len; i++) {  
+                        str += "<option value=" + results.rows.item(i).id + ">" + results.rows.item(i).id + "</option>";  
+                        document.getElementById("ddlid").innerHTML += str;  
+                        str = '';  
+                    }  
+                }, null);  
+            });  
+  
+        }  
+  
+        function showupdte()  
+        {  
+            empidbind();  
+  
+  
+            $('#tdorginal').hide();  
+            $('#tdid').show();  
+            $('#btnupdate').show();  
+            $('#btnInsert').hide();  
+            $('#btndel').hide();  
+            $('#btninsertshw').show();  
+            $('#btnupdateshw').hide();  
+            $('#btndeleteshw').show();  
+            $('#rowName').show();  
+            $('#rowLocation').show();  
+            $('#rowdept').show();  
+              
+        }  
+  
+        function updte() {  
+            
+            var id = document.getElementById("ddlid").value;  
+            var name = document.getElementById("tbName").value;  
+            var location = document.getElementById("tbLocation").value;  
+            var did = document.getElementById("tbLdept").value;  
+  
+            dbObj.transaction(function (tx) {  
+                tx.executeSql('update Employee_Table set Name="' + name + '",Location="' + location + '",did=' + did + ' where id=' + id + '');  
+            });  
+  
+            alldetails();  
+        }  
+  
+        function alldetails()  
+        {  
+            dbObj.transaction(function (tx) {  
+                tx.executeSql('SELECT e.id,e.Name,e.Location,d.dName,d.did FROM Employee_Table e inner join dept_Table d on e.did=d.did ', [], function (tx, results) {  
+                    var len = results.rows.length, i;  
+                    // document.getElementById("tblGrid").innerHTML = '';  
+                    $("#tblGrid").find("tr:gt(0)").remove();  
+                    var str = '';  
+                    for (i = 0; i < len; i++) {  
+                        str += "<tr>";  
+                        str += "<td>" + results.rows.item(i).id + "</td>";  
+                        str += "<td>" + results.rows.item(i).Name + "</td>";  
+                        str += "<td>" + results.rows.item(i).Location + "</td>";  
+                        str += "<td>" + results.rows.item(i).dName + "</td>";  
+                        str += "</tr>";  
+                        document.getElementById("tblGrid").innerHTML += str;  
+                        str = '';  
+                    }  
+                }, null);  
+            });  
+  
+        }  
+  
+        dbObj.transaction(function (tx) {  
+            tx.executeSql('SELECT * from dept_Table', [], function (tx, results) {  
+                var len = results.rows.length, i;  
+                var str = '';  
+                for (i = 0; i < len; i++) {  
+                    str += "<option value=" + results.rows.item(i).did + ">" + results.rows.item(i).dName + "</option>";  
+                    document.getElementById("tbLdept").innerHTML += str;  
+                    str = '';  
+                }  
+            }, null);  
+        });  
+  
+  
+         
+    </script>  
+</head>  
+<body>  
+    <p id="hh"></p>  
+    <form id="frm1">  
+        <table id="tblinsert">  
+            <tr>  
+                <td>ID:</td>  
+                <td id="tdorginal"><input type="text" id="tbID" /><span style="color:red">*ID must be unique</span></td>  
+                <td id="tdid" style="display:none">  
+                    <select id="ddlid" onchange="myFunction()"></select>  
+                </td>  
+            </tr>  
+            <tr id="rowName">  
+                <td>Name:</td>  
+                <td><input type="text" id="tbName" /></td>  
+  
+            </tr>  
+            <tr id="rowLocation">  
+                <td>Location:</td>  
+                <td><input type="text" id="tbLocation" /></td>  
+            </tr>  
+  
+            <tr id="rowdept">  
+                <td>Dept:</td>  
+                <td>  
+                    <select id="tbLdept"></select>  
+                </td>  
+            </tr>  
+  
+            <tr>  
+                 
+            </tr>  
+        </table>  
+    </form>  
+    <br />  
+    <button id="btnInsert" onclick="Insert()" style="color:green;display:block">Save</button>  
+    <button id="btnupdate" onclick="updte()" style="color:blue;display:none">Update</button>  
+    <button id="btndel" onclick="del()" style="color:red;display:none">Delete</button>  
+      
+    <br /><br />  
+    <button id="btnupdateshw" onclick="showupdte()" style="color:red">update Employee details</button>  
+    <button id="btndeleteshw" onclick="showdel()" style="color:blue">Delete Employee details</button>  
+    <button id="btninsertshw" onclick="showin()" style="color:green;display:none">save Employee details</button>  
+    <br /><br />  
+    <table id="tblGrid" cellpadding="10px" cellspacing="0" border="1">  
+        <tr style="background-color:black;color:white;font-size:18px;">  
+            <td >  
+                ID  
+            </td>  
+            <td >  
+                Name  
+            </td>  
+            <td >  
+                Location  
+            </td>  
+            <td >  
+                Department  
+            </td>  
+        </tr>  
+    </table>  
+    <br />  
+     
+   
+</body>  
+</html>  
